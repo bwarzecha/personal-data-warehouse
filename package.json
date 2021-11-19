@@ -2,32 +2,47 @@
   "name": "personal-data-warehouse",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "local-dynamo": "local-dynamo",
+    "dev": "DEBUG=* concurrently \"next dev\" \"local-dynamo\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "cdk": "cdk",
-    "deploy": "cdk deploy --profile nextjs"
+    "deploy": "cdk deploy --profile nextjs",
+    "test": "jest"
   },
   "dependencies": {
+    "@icons-pack/react-simple-icons": "^4.6.1",
+    "@types/simple-oauth2": "^4.1.1",
+    "client-oauth2": "^4.3.3",
     "next": "12.0.4",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "simple-icons": "^5.23.0",
+    "simple-oauth2": "^4.2.0"
   },
   "devDependencies": {
     "@aws-cdk/aws-lambda": "^1.132.0",
     "@aws-cdk/core": "^1.132.0",
     "@sls-next/cdk-construct": "^3.6.0",
     "@sls-next/lambda-at-edge": "^3.6.0",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
     "@types/node": "16.11.9",
     "@types/react": "17.0.35",
     "autoprefixer": "^10.4.0",
+    "aws-cdk": "^1.132.0",
+    "babel-jest": "^27.3.1",
+    "concurrently": "^6.4.0",
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.4",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.3.1",
+    "local-dynamo": "^0.6.0",
     "postcss": "^8.3.11",
+    "react-test-renderer": "^17.0.2",
     "tailwindcss": "^2.2.19",
     "ts-node": "^10.4.0",
-    "typescript": "4.5.2",
-    "aws-cdk": "^1.132.0"
+    "typescript": "4.5.2"
   }
 }
