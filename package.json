@@ -14,6 +14,7 @@
   "dependencies": {
     "@icons-pack/react-simple-icons": "^4.6.1",
     "@types/simple-oauth2": "^4.1.1",
+    "aws-sdk": "^2.1033.0",
     "client-oauth2": "^4.3.3",
     "next": "12.0.4",
     "react": "17.0.2",
@@ -34,6 +35,7 @@
     "aws-cdk": "^1.132.0",
     "babel-jest": "^27.3.1",
     "concurrently": "^6.4.0",
+    "dynamodb-local": "^0.0.31",
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.4",
     "identity-obj-proxy": "^3.0.0",

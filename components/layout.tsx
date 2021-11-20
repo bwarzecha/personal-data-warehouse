@@ -15,10 +15,10 @@ export default function Layout({ children }: { children?: ReactNode }) {
           </button>
         </div>
         <nav className="pt-3 text-base font-semibold text-white">
-          {["Dashboard", "Blank Page"].map((x) => (
+          {["Providers", "Blank Page"].map((x) => (
             <a
               key={x}
-              href="index.html"
+              href="/providers"
               className="flex items-center py-4 pl-6 text-white hover:bg-secondary "
             >
               <i className="mr-3 fas fa-tachometer-alt"></i>
